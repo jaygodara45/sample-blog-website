@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Blog app</title>
+  </head>
+  <body>
+    <div class="w-full h-screen p-10 text-blue-800 flex justify-center">
+      <form
+        class="flex flex-col justify-center gap-6 p-10 w-96 h-auto rounded-md border-2 border-gray-200 shadow-inner"
+        action="/register"
+        method="post"
+      >
+        <h1 class="text-2xl text-center font-semibold">Create new user</h1>
+        <input
+          class="outline-none border-2 p-2 rounded-md"
+          type="text"
+          name="name"
+          placeholder="name"
+        />
+        <input
+          class="outline-none border-2 p-2 rounded-md"
+          type="text"
+          name="username"
+          placeholder="username"
+        />
+        <input
+          class="outline-none border-2 p-2 rounded-md"
+          type="number"
+          name="age"
+          placeholder="age"
+        />
+        <input
+          class="outline-none border-2 p-2 rounded-md"
+          type="text"
+          name="email"
+          placeholder="email"
+        />
+        <input
+          class="outline-none border-2 p-2 rounded-md"
+          type="text"
+          name="password"
+          placeholder="password"
+        />
+        <input
+          class="outline-none bg-blue-800 px-2 py-3 rounded-md text-center text-white cursor-pointer"
+          type="submit"
+          value="Create account"
+        />
+      </form>
+    </div>
+  </body>
+</html>
