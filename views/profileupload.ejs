@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Blog app</title>
+  </head>
+  <body>
+    <a class="mt-5 ml-5 inline-block" href="/profile">Back to profile</a>
+    <div class="w-full h-screen p-10 text-blue-800 flex justify-center">
+      <form
+        class="flex flex-col justify-center gap-6 p-10 w-96 h-72 rounded-md border-2 border-gray-200 shadow-inner"
+        action="/uploadprofilepic"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <h1 class="text-2xl text-center font-semibold">Edit profile picture</h1>
+        <input
+          class="outline-none border-2 p-2 rounded-md"
+          type="file"
+          name="image"
+          placeholder="name"
+        />
+
+        <input
+          class="outline-none bg-blue-800 px-2 py-3 rounded-md text-center text-white cursor-pointer"
+          type="submit"
+          value="Update"
+        />
+      </form>
+    </div>
+  </body>
+</html>
